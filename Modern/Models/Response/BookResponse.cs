@@ -5,12 +5,14 @@ namespace Modern.Models.Response
 {
 	public class BookResponse
 	{
+		public string Id { get; set; }
 		public string Name { get; set; }
 
 		public static BookResponse MapFromBook(Book request)
 		{
 			var book = new BookResponse();
 			book.Name = request.Name;
+			book.Id = request.Id;	
 			return book;
 		}
 	}
