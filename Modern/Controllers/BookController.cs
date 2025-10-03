@@ -40,6 +40,7 @@ namespace Modern.Controllers
 		public async Task<IActionResult> UpdateBook([FromRoute] string id, [FromBody] BookRequest request)
 		{
 			var updated = await bookService.UpdateBook(request, id);
+
 			if (updated == null)
 				return NotFound();
 			return Ok(updated);
