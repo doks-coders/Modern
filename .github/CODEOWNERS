@@ -1,0 +1,8 @@
+# Workflows can only be modified with your review
+.github/workflows/* @doks-coders
+
+# Protect CODEOWNERS itself
+.github/CODEOWNERS @doks-coders
+
+# Restrict tests folder — only you can approve changes
+/Modern.Test/* @doks-coders
