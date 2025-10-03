@@ -1,0 +1,57 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+Debug/
+Release/
+x64/
+x86/
+[Aa]rtifacts/
+
+# Rider / VS / VSCode
+.idea/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.nuget.props
+*.nuget.targets
+*.nuget.cache
+*.lock.json
+
+# Logs
+*.log
+*.tlog
+
+# Database
+*.mdf
+*.ldf
+*.ndf
+
+# Test results
+TestResult*/
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+# Publish output (rebuild it in CI/CD)
+publish/
+wwwroot/dist/
+node_modules/
+
+# Secrets / Config (use appsettings.Development.json locally, not in git)
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+
+# OS specific
+.DS_Store
+Thumbs.db
