@@ -1,0 +1,10 @@
+# Workflows can only be modified with your review
+.github/workflows/* @guonnie
+
+# Protect CODEOWNERS itself
+.github/CODEOWNERS @guonnie
+
+# Restrict tests folder — only you can approve changes
+/Modern.Test/* @guonnie
+
+
