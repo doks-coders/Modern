@@ -6,5 +6,3 @@
 
 # Restrict tests folder — only you can approve changes
 /Modern.Test/* @guonnie
-
-
