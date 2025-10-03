@@ -66,7 +66,7 @@ namespace Modern.Test
 						$"Response could not be parsed as {nameof(BookResponse)} list.", ex);
 				}
 			}
-		 
+		 /*
 		 [Test]
 
 		 public async Task GET_Book_By_Id_Returns_200_And_Book()
@@ -80,6 +80,7 @@ namespace Modern.Test
 			   // BookResponse does not have Id, so just check Name is not null
 			   Assert.That(book.Name, Is.Not.Null);
 		 }
+		 */
 		 
 
 

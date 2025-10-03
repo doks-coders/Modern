@@ -40,10 +40,12 @@ namespace Modern.Services
 				return null;
 			return BookResponse.MapFromBook(item);
 		}
+		
+		
 		public async Task<IEnumerable<BookResponse>> GetAll()
 		{
 			var items = await repository.GetAll();
-			var responses =items.ConvertAll(u => BookResponse.MapFromBook(u));
+			var responses = items.ConvertAll(u => BookResponse.MapFromBook(u));
 			return responses;
 		}
 
