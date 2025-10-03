@@ -41,4 +41,4 @@ jobs:
       - name: Run tests
         env:
           ConnectionStrings__DefaultConnection: "Host=localhost;Port=5432;Database=test_modern;Username=postgres;Password=password"
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test Modern.sln --configuration Release --verbosity normal
